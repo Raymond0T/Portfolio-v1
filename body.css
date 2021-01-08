@@ -1,0 +1,252 @@
+body{
+    background-color: rgb(10, 10, 10);
+}
+.snowPart{
+    position: fixed;
+    z-index: -1;
+    border-radius: 50%;
+    background-color: white;
+    top: -5%;
+    transition: 10s;
+    transition-timing-function: ease-in-out;
+    filter:blur(5px)
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(233, 233, 241);
+    border-radius: 10px;
+}
+/*--------------------------------------------------------------------------------------------------
+                                            ABOUT ME SECTION
+----------------------------------------------------------------------------------------------------*/
+/*
+#about-me-section:before{
+    content:"";
+    background-image:url(court_background.jpg);
+    background-attachment: fixed;
+    background-image: cover;
+    background-position: 30% 30%;
+    top:0px;
+    right:0px;
+    left: 0px;
+    bottom: 0px;
+    position: absolute;
+    opacity: 0.3;
+}
+#about-me-section:after{
+    content: "";
+    position: absolute;
+    top:0px;
+    right:0px;
+    left: 0px;
+    bottom: 0px;
+    background: rgba(0,0,0,0.8);
+}
+*/
+
+#about-me-section{
+    position: relative;
+}
+.about-row{
+    display:flex;
+    flex-wrap:wrap;
+    position: relative;
+    z-index: 1;
+}
+.about-section-column{
+    flex:45%;
+    margin:1rem 1rem 7rem 1rem;
+}
+.about-section-right{
+    padding: 0 3rem 0 3rem;
+}
+.row:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+.about-section-column img{
+    position: relative;
+    width:125px;
+    height: 125px;
+    display: inline;
+}
+.about-section-double-img{
+    background: rgb(229, 229, 235);
+    box-shadow:5px 5px 16px #c0baba ;
+    border: 2px solid rgb(72, 184, 199);
+    border-radius:16px;
+}
+.about-section-double-img:hover{
+    -webkit-animation: bounce 1s ease-in-out;
+    -o-animation: bounce 1s ease-in-out;
+    -moz-animation: bounce 1s ease-in-out;
+    animation: bounce 1s ease-in-out;
+}
+
+@-webkit-keyframes bounce{
+    0%, 50%, 100% {-webkit-transform: translateY(0);}
+    20%{-webkit-transform: translateY(10px); }
+    40%{-webkit-transform: translateY(-35px); }
+    60%{-webkit-transform: translateY(-20px);}
+    80%{-webkit-transform: translateY(5px);}
+}
+
+@-o-keyframes bounce{
+    0%, 50%, 100% {-webkit-transform: translateY(0);}
+    20%{-webkit-transform: translateY(10px); }
+    40%{-webkit-transform: translateY(-35px); }
+    60%{-webkit-transform: translateY(-20px);}
+    80%{-webkit-transform: translateY(5px);}
+}
+
+@-moz-keyframes bounce{
+    0%, 50%, 100% {-webkit-transform: translateY(0);}
+    20%{-webkit-transform: translateY(10px); }
+    40%{-webkit-transform: translateY(-35px); }
+    60%{-webkit-transform: translateY(-20px);}
+    80%{-webkit-transform: translateY(5px);}
+}
+
+@keyframes bounce{
+    0%, 50%, 100% {-webkit-transform: translateY(0);}
+    20%{-webkit-transform: translateY(10px); }
+    40%{-webkit-transform: translateY(-35px); }
+    60%{-webkit-transform: translateY(-20px);}
+    80%{-webkit-transform: translateY(5px);}
+}
+
+.about-links{
+    display: inline;
+    float: left;
+    padding: 1.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.about-links > a{
+    text-decoration: none;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------
+                                            SKILL SECTION
+----------------------------------------------------------------------------------------------------------------*/
+/*
+#skill-section:before{
+    content:"";
+    background-image: url(court_background.jpg);
+    background-size:250%;
+    background-position: 30% 60%;
+    position: absolute;
+    background-attachment: fixed;
+    top:0px;
+    right:0px;
+    left: 0px;
+    bottom: 0px;
+    opacity: 0.3;
+    
+}
+#skill-section:after{
+    content: "";
+    position: absolute;
+    top:0px;
+    right:0px;
+    left: 0px;
+    bottom: 0px;
+    background: rgba(0,0,0,0.8);
+}
+*/
+
+#skill-section{
+    position: relative;
+    overflow: hidden;
+}
+.skill-row-container{
+    display:flex;
+    flex-wrap:wrap;
+    padding:1.75rem;
+    justify-content: center;
+    height:auto;
+    position: relative;
+    z-index:1;
+}
+.skill-icon{
+    padding:3.5rem 3.5rem 2rem 3.5rem;
+    width: 100px;
+    height:100px;
+}
+.skill-icon-text{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    color:rgb(247, 244, 244);
+    width: 150px;
+    padding-left:0.5rem;
+    margin:1rem 1rem 1rem 1.5rem;
+    opacity: 1;
+}
+
+#adobe-icon{
+    margin:0 0 1.8rem 0;
+}
+#cplus-icon{
+    margin:0 0 1.8rem 0;
+}
+#css-icon{
+    margin:0 0 1.8rem 0;
+}
+#html-icon{
+    margin:0 0 1.8rem 0;
+}
+#java-icon{
+    margin:0 0 1.8rem 0;
+}
+#js-icon{
+    margin:0 0 1.8rem 0;
+}
+#sql-icon{
+    margin:0 0 1.8rem 0;
+}
+
+
+/*------------------------------------------------------------------------------------------
+                                    INTEREST SECTION
+--------------------------------------------------------------------------------------------*/
+#interest-section{
+    background-image: linear-gradient(25deg,rgb(82, 4, 92), rgb(126, 9, 106), rgb(10, 12, 126), rgb(5, 118, 133), rgb(202, 199, 199));
+    border-radius: 15%;
+}
+
+.interest-list-container{
+    padding: 0 0 2rem 5rem;
+    position: relative;
+    display:inline-block;
+}
+.interest-text-pos{
+    margin:1rem 1.5rem 1rem 1.5rem;
+    position: relative;
+    display:inline-block;
+}
+
+#scrollToTop{
+    position: relative;
+    float: right;
+    left: -1.5%;
+    transform: translateY(-100%);
+    font-size: 3rem;
+    color:white;
+    text-decoration: none;
+    background:transparent;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+}
+

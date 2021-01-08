@@ -1,0 +1,154 @@
+#experience-section{
+    position: relative;
+    background:#091f3f;
+    padding: 2rem 0rem;
+    text-align: center;
+    min-width: 100%;
+    border-radius: 15%;
+}
+/*
+#expTitle::before{
+    content: "Project";
+    color: rgb(233, 52, 52);
+}
+#expTitle::after{
+    content: "Experience";
+    color: rgb(72, 184, 199);
+}
+*/
+.exp-row{
+    position: relative;
+    height: 18.75rem;
+    width: 30rem;
+    margin: 2rem;
+    display: inline-block;
+    text-align: center;
+}
+
+.card{
+    position: relative;
+    width:100%;
+    height:100%;
+    box-sizing: border-box;
+    transition: all 0.25s ease-in-out;
+}
+
+.front-side-blue, .back-side, .front-side-red{
+    display: block;
+    transition-timing-function: ease-in-out;
+    transition-duration: .5s;
+    width:inherit;
+    height: 100%;
+    border-radius: 10px;
+    text-align: center;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.front-side-blue{
+    background: linear-gradient(45deg,rgb(96, 97, 97),white,rgb(72, 184, 199),white,rgb(96, 97, 97));
+    transform: rotateY(0deg);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.front-side-red{
+    background: linear-gradient(45deg,rgb(96, 97, 97),white,rgb(233, 52, 52),white,rgb(96, 97, 97));
+    transform: rotateY(0deg);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.back-side{
+    background-color: rgb(225, 227, 230);
+    color: rgb(59, 58, 58);
+    position: absolute;
+    opacity: 0;
+    top:0px;
+    left:0px;
+    transform: rotateX(-180deg);  
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.exp-row:hover .card .front-side-blue, .exp-row:focus .card .front-side-blue{
+    transform: rotateX(180deg);
+}
+
+.exp-row:hover .card .front-side-red, .exp-row:focus .card .front-side-red{
+    transform: rotateX(180deg);
+}
+
+.exp-row:hover .card .back-side, .exp-row:focus .card .back-side{
+    transform: rotateX(0deg);
+    opacity: 1;
+}
+
+.front-side-blue p{
+    padding: 4rem 2rem 4rem 2rem;
+    font-size: 30px;
+}
+.front-side-red p{
+    padding: 4rem 2rem 4rem 2rem;
+    font-size: 30px;
+}
+
+.back-side p{
+    padding: 1rem;
+    font-size: 22px;
+    text-align: center;
+}
+/*
+.exp-row{
+    position: relative;
+    height: 300px;
+    width: 70vw;
+    box-sizing: border-box;
+    perspective: 1000px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.card{
+    position: relative;
+    width:100%;
+    height:100%;
+    transform-style: preserve-3d;
+    transition: all 0.25s ease-in-out;
+    margin: 2rem 0;
+}
+
+.front-side, .back-side{
+    position: absolute;
+    height:100%;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    background:blue;
+    backface-visibility: hidden;
+}
+
+.front-side{
+    background-color: #bbb;
+  color: black;
+}
+
+.back-side{
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateX(180deg);  
+}
+
+.exp-row:hover .card{
+    transform: rotateX(180deg);
+}
+
+*/

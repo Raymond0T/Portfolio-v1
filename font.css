@@ -1,0 +1,94 @@
+
+.xlarge-font{
+    font-family: 'Lobster', cursive;
+    font-size: 3.875rem;
+    letter-spacing: 2px;
+}
+.large-font{
+    font-family: 'Lobster', cursive;
+    font-size: 2.875rem;
+    letter-spacing: 2px;
+}
+.medium-font{
+    font-family: 'Lobster', cursive;
+    font-size: 1.875rem;
+    letter-spacing: 2px;
+}
+.small-font{
+    font-family: 'Lobster', cursive;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+.body-font{
+    font-family: 'Public Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color:rgb(238, 234, 234);
+}
+.section-title-font{
+    font-family: 'Public Sans', sans-serif;
+    font-size: 4rem;
+    font-style: italic;
+    text-align: center;
+    margin:0;
+    padding:2.5rem 0 2.5rem 0;
+    font-weight:500;
+    color:rgb(240, 245, 240);
+}
+
+.scroll-bg-title-pos{
+    position: relative;
+    display: block;
+    color: rgb(247, 246, 250);
+    text-decoration: none;
+    position: relative;
+    z-index: 2;
+}
+.hero-font{
+    font-family: 'Public Sans', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    color:yellow;
+}
+#hero-text-big{
+    font-family: 'Public Sans', sans-serif;
+    font-size: 7.5rem;
+    color:rgb(10, 214, 250);
+    text-shadow: 8px 8px 8px rgb(248, 246, 246);
+}
+#hero-text-2{
+    font-family: 'Lobster', cursive;
+    font-size: 1.875rem;
+    letter-spacing: 2px;
+    color: rgb(10, 214, 250);
+    text-shadow: 8px 8px 8px rgb(4, 23, 197);
+}
+
+.exp-font{
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    text-align: left;
+    color:white;
+    
+}
+.exp-front-font{
+    font-family: 'Lobster', cursive;
+    font-size: 1.875rem;
+    letter-spacing: 2px;
+    color: #053275;
+}
+.skill-icon-text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.75rem;
+}
+
+.interest-text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: white;
+}
+
+

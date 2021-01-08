@@ -1,0 +1,75 @@
+
+
+/************************************HERO SECTION***********************************/
+#hero-section{
+    overflow: hidden;
+    height:90vh;
+    background: radial-gradient( rgba(210, 209, 212, 0.7), rgba(37, 193, 221, 0.7), rgba(13, 5, 122, 0.7), rgba(18, 4, 68, 0.7), rgba(3, 10, 37, 0.7)) repeat center / 1000%, url(snow-background.jpg) repeat center / cover;
+    -webkit-animation: gradientAnimation 12s ease-in-out infinite;
+    -o-animation: gradientAnimation 12s ease-in-out infinite;
+    -moz-animation: gradientAnimation 12s ease-in-out infinite;
+	animation: gradientAnimation 12s ease-in-out infinite;
+}
+.hero-container{
+    height:100vh;
+}
+@-webkit-keyframes gradientAnimation {
+    0%{background-position: 0% 30%, 0 0;}
+    50%{background-position: 100% 70%, 0 0;}
+	100%{background-position: 0% 30%, 0 0;}
+}
+@-o-keyframes gradientAnimation {
+    0%{background-position: 0% 30%, 0 0;}
+    50%{background-position: 100% 70%, 0 0;}
+	100%{background-position: 0% 30%, 0 0;}
+}
+@-moz-keyframes gradientAnimation {
+    0%{background-position: 0% 30%, 0 0;}
+    50%{background-position: 100% 70%, 0 0;}
+	100%{background-position: 0% 30%, 0 0;}
+}
+@keyframes gradientAnimation {
+    0%{background-position: 0% 30%, 0 0;}
+    50%{background-position: 100% 70%, 0 0;}
+	100%{background-position: 0% 30%, 0 0;}
+}
+
+#hero-img{
+    display:block;
+    position: relative;
+}
+#hero-text-big{
+    left:50%;
+    bottom:-50%;
+    transform: translate(-50%,-100%);
+    text-align: center;
+    padding:1.75rem;
+    position: relative;
+    z-index:1;
+}
+
+#hero-text-2{
+    display: flex;
+    flex-wrap: wrap;
+    position:absolute;
+    bottom:40%;
+    left:50%;
+    transform: translate(-50%);
+    width:20%;
+    justify-content: space-around;
+}
+
+/*
+#hero-section:after{
+    content:"";
+    background-image: url(landscape_home.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:0px;
+    right:0px;
+    left: 0px;
+    bottom: 0px;
+    opacity: 1;
+}
+*/

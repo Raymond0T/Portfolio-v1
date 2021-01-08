@@ -1,0 +1,96 @@
+/*********************************Media Query ************************************/
+@media only screen and (max-width:31.25em){
+  .interest-list-container{
+    padding:0;
+  }
+}
+@media only screen and (max-width:37.5em){
+    .hero-section{
+        height: 750px;
+    }
+    #hero-text-2{
+      font-size: 2.5vh;
+    }
+    #hero-text-big{
+      left:50%;
+      bottom:-60%;
+      transform: translate(-50%,-100%);
+  }
+  
+  #hero-text-2{
+      bottom:35%;
+      left:50%;
+      transform: translate(-50%);
+  }
+    .about-section-column{
+        flex-direction: column;
+        flex:100%;
+    }
+    .about-section-column > img{
+        width:200px;
+        height: 300px;
+    }
+    .body-font{
+        font-size: 15px;
+    }
+    .skill-icon{
+      width:90px;
+      height:90px;
+      padding: 1.5rem 2.5rem 0 2.5rem;
+    }
+    .skill-icon-text{
+      font-size:25px;
+      width:90px;
+      margin:5px 10px 5px 20px;
+    }
+
+    #experience-section{
+      padding: 2rem 0 2rem 0;
+    }
+    .exp-row{
+      margin: 2rem 0 2rem 0;
+    }
+}
+
+@media only screen and (max-width:46.875em){
+    .body-font{
+        font-size: 20px;
+    }
+    .exp-row{
+      width:90%;
+    }
+}
+
+@media only screen and (max-width:50em){
+  #hero-text-big{
+    font-size: 8.5vh;
+  }
+  
+}
+
+@media only screen and (max-width:64em){
+}
+@media only screen and (max-width:80em){
+  .hide-for-small-screen{
+    display:none;
+  }
+}
+@media only screen and (max-width:87.5em){
+}
+
+
+/*******************************************MIN WIDTH ****************************************/
+@media only screen and (min-width:37.5em){
+}
+@media only screen and (min-width:50em){
+}
+@media only screen and (min-width:63.9375em){
+}
+@media only screen and (min-width:80em){
+  .hide-for-big-screen{
+    display:none;
+  }
+}
+@media only screen and (min-width:87.5em){
+}
+

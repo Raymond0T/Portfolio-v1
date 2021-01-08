@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name ="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <meta name="description" content="Resume">
+        <title> Raymond's Portfolio </title>
+        <link rel="stylesheet" href="font.css" src="font.css">
+        <link rel="stylesheet" href="header.css" src="header.css">
+        <link rel="stylesheet" href="body.css" src="body.css">
+        <link rel="stylesheet" href="hero.css" src="hero.css">
+        <link rel="stylesheet" href="exp.css" src="exp.css">
+        <link rel="stylesheet" href="media-query.css" src="media-query.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="./javascript/header.js" defer></script>
+        <script type="text/javascript" src="./javascript/body.js" defer></script>
+        <script type="text/javascript" src="./javascript/snow.js" defer></script>
+
+        
+        
+        
+    </head>
+    <body>
+        <header id="header">
+            <svg id="desktop-nav-header" class="hide-for-small-screen" viewbox="0 0 2000 210">
+                <defs>
+                    <linearGradient id="home-triangle-gradient"  x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#000066;stop-opacity:0.75" />
+                        <stop offset="100%" style="stop-color:#00FFFF;stop-opacity:1" />   
+                    </linearGradient>
+
+                    <linearGradient id="home-shape-gradient" x1="0%" y1 ="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#000099 ;stop-opacity:1"/>
+                        <stop offset="100%" style="stop-color: black; stop-opacity:1"/>
+                    </linearGradient>
+                </defs>
+
+                <g fill="url(#home-triangle-gradient)" transform="translate(725 0)">
+                    <a id="home-triangle" href="https://www.linkedin.com/in/raymond-t-795494163/" target="_blank">
+                        <path d="M   0   0
+                                L  275 120
+                                L  550   0 
+                                Z
+                                "
+                                stroke="#000000"
+                                stroke-width="3"/>
+                                
+                        <text x="225" y="25" fill="white" class="medium-font"> Connect  </text>
+                        <text x="200" y="55" fill="white" class="medium-font"> with me on </text>
+                        <text x="215" y="85" fill="white" class="medium-font" fill="white"> LinkedIn </text>
+                    </a>
+                </g>
+                <g fill="url(#home-shape-gradient)" transform="translate(500 0)">
+                    <a id="home-left-trap" href="#experience-section">
+                        <path d="M  225    0
+                                L   -25    0
+                                L  -150  60
+                                L   360  60
+                                Z"
+                                stroke="#000000"
+                                stroke-width="3"/>
+
+                        <text x="20" y="40" fill="white" class="small-font"> Experience</text>
+                    </a>
+                </g>
+                <g fill="url(#home-shape-gradient)">
+                    <a id="home-left-quad" href="#about-me-section">
+                        <path d="M     0    0
+                                L   475     0
+                                L   350   60
+                                L     0   60
+                                Z"
+                                stroke="#000000"
+                                stroke-width="3"/>
+                        <text x="125" y="40" fill="white" class="small-font">About Me</text>
+                    </a>
+                </g>
+
+                <g fill="url(#home-shape-gradient)" transform="translate(1275 0)">
+                    <a id="home-right-trap" href="#skill-section">
+                        <path d="M    0    0
+                                L   250    0
+                                L   380  60
+                                L  -138  60
+                                Z"
+                                stroke="#000000"
+                                stroke-width="3"/>
+                        <text x="65" y="40" fill="white" class="small-font">Skills </text>
+                    </a>
+                </g>
+
+                <g fill="url(#home-shape-gradient" transform="translate(1600 0)">
+                    <a id="home-right-quad" href="#interest-section">
+                        <path d="M  -75     0
+                                L   400    0
+                                L   400  60
+                                L    55  60
+                                Z"        
+                                stroke="#000000"
+                                stroke-width="3"/>
+                        <text x="130" y="40" fill="white" class="small-font">Interest </text>
+                    </a>
+                </g>
+            </svg>
+
+            <!--
+                For Smaller Screen Resoultion
+            -->
+            <nav class="mobile-nav hide-for-big-screen" >
+                
+                    <a class="mobile-name"> 
+                        <img src="mobile-name.png" width="auto" height ="40" alt ="Name">
+                    </a>
+        
+                <a id="dropdown-menu" href="#" onclick="menuOpen()">
+                    <span class="first-span"></span>
+                    <span class="second-span"></span>
+                    <span class="third-span"></span>
+                </a>
+
+            </nav>
+            <div id="menu-list" class="menu-container hide-for-big-screen">
+                <a href="#about-me-section" onclick="menuOpen()" class="home-list-menu">About Me</a>
+                <a href="#experience-section" onclick="menuOpen()" class="home-list-menu">Experience</a>
+                <a href="#skill-section" onclick="menuOpen()" class="home-list-menu">Skills</a>
+                <a href="#interest-section" onclick="menuOpen()" class="home-list-menu">Interest</a>
+                <a href="#" onclick="menuOpen()" class="home-list-menu">LinkedIn</a>
+            </div>
+        </header>
+      
+        <!-- 
+            HERO SECTION
+        -->
+        <div id="hero-section" >
+            <h2 id="hero-text-big">My Portfolio</h2>
+            <div>
+                <span id="hero-text-2">Raymond Trau</span>
+            </div>
+        </div>
+
+         <!-- 
+            BODY OF PAGE STARTS HERE
+        -->
+
+        <div id="about-me-section" class="about-me">
+            <div>
+                <h1 class="section-title-font scroll-bg-title-pos">About Me</h1>
+            </div>
+            <div class="about-row">
+                <section class="about-section-column">
+                    <div class="about-links">
+                        <a href="https://www.linkedin.com/in/raymond-t-795494163/" target="_blank">
+                            <img class="about-section-double-img" src="./icon/Linkedin-icon.png" alt ="linkedin">
+                            <p class="body-font">Linkedin </p>
+                        </a>
+                    </div>
+                    <div class="about-links body-font">
+                        <img class="about-section-double-img" src="./icon/email-icon.png" alt ="github">
+                        <p class="body-font">raymond8trau@gmail.com</p>
+                    </div>
+                </section>
+                <section class="about-section-column ">
+                    <p class="body-font about-section-right">
+                        Hi, my name is Raymond Trau. I recenetly graduated from Univeristy of California, Merced during Fall 2020 with a B.S in Computer Science and Engineering.
+                        
+                        <br><br><br>
+                        Feel free to connect with me on LinkedIn! 
+                    </p>
+                </section>
+            </div>
+        </div>
+
+        <div id="experience-section">
+            <h1 id="expTitle" class="section-title-font">Project/Experience</h1>
+            
+            <div id="exp-card-container"> 
+
+                <div class="exp-row">
+                    <div class="card">
+                        <div class="front-side-red exp-front-font" > 
+                            <p>
+                                Built a Streamer Index
+                                <br><br><br>
+                                (Database)    
+                            </p>
+                        </div>
+                        <div class="back-side">
+                            <p>
+                                Created an index that holds information about Streamers
+                                and Content Creators. 
+                                <br> <br> 
+                                (Used SQL, Node.js, Express Server, HTML, and CSS to
+                                Create a Database with a User Interface)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exp-row">
+                    <div class="card">
+                        <div class="front-side-red exp-front-font" > 
+                            <p>
+                                Front-End Developer
+                                <br><br><br>
+                                (UC Merced Library)    
+                            </p>
+                        </div>
+                        <div class="back-side">
+                            <p>
+                                Collaborated with a team to help develop and implement a web application
+                                for University of California, Merced Library Exhibit.
+                                <br> <br> 
+                                (Used HTML, CSS, php, and Javascript to create the 
+                                user interface and front-end of the web application)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exp-row">
+                    <div class="card">
+                        <div class="front-side-red exp-front-font" > 
+                            <p>
+                                Naturalist Application Team Member
+                                <br><br>
+                                (Engineer Service Learning)    
+                            </p>
+                        </div>
+                        <div class="back-side">
+                            <p>
+                                Collaborated with a team to design and develop a mobile application
+                                that would help identify species in The Vernal Pool and Grassland Reserve located
+                                in Merced.
+                                <br> <br> 
+                                (Worked on the user interface
+                                and some back-end of the mobile application)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exp-row">
+                    <div class="card">
+                        <div class="front-side-red exp-front-font" > 
+                            <p>
+                                Software Engineer Assistant
+                                <br><br><br>
+                                (HackMerced) 
+                            </p>
+                        </div>
+                        <div class="back-side">
+                            <p>
+                                Collaborated with a team to develop a web application for HackMerced to use 
+                                for the hackathon.
+                                <br> <br> 
+                                (Worked on some back-end of the web application)
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exp-row">
+                    <div class="card">
+                        <div class="front-side-blue exp-front-font" > 
+                            <p>
+                                Event Staff Student Supervisor
+                                <br><br>
+                                (Recreation & Athletic Department)
+                            </p>
+                        </div>
+                        <div class="back-side">
+                            <p>
+                                Oversaw a small team throughout an event that was hosted by Recreation and
+                                Athletic Department.
+                                <br><br>
+                                (Made sure event set-up/breakdown were correct and events were running smoothly)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exp-row">
+                    <div class="card">
+                        <div class="front-side-blue exp-front-font" > 
+                            <p>
+                                IT Student Special Event Liaison
+                                <br>
+                                (Office of Information Technology)
+                            </p>
+                        </div>
+                        <div class="back-side">
+                            <p>
+                                Managed audio/visual such as digital projection, light and sound board, portable sound 
+                                system, etc. during events.
+                                <br><br>
+                                (Made sure all technology were running smoothly throughout events/rehearsals)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <div id="skill-section">
+            <div>
+                <h1 class="section-title-font scroll-bg-title-pos">Skills</h1>
+            </div>
+            <div class="skill-row-container">
+                <div id="adobe-icon" onmouseover="skillMouseOver(this)" onmouseout="skillMouseOut(this)">
+                    <img class="skill-icon" src="../small-icon/small_adobe_icon.png" alt="icon">
+                     <p class="skill-icon-text" >ADOBE LIGHTROOM</p>
+                </div>
+                <div id="cplus-icon" onmouseover="skillMouseOver(this)" onmouseout="skillMouseOut(this)">
+                    <img class="skill-icon" src="../small-icon/small_c++_icon.png" alt="icon">
+                    <p class="skill-icon-text">C++</p>
+                </div>
+                <div id="css-icon" onmouseover="skillMouseOver(this)" onmouseout="skillMouseOut(this)">
+                    <img class="skill-icon" src="../small-icon/small_css_icon.png" alt="icon">
+                    <p class="skill-icon-text">CSS</p>
+                </div>
+                <div id="html-icon" onmouseover="skillMouseOver(this)" onmouseout="skillMouseOut(this)">
+                    <img class="skill-icon" src="../small-icon/small_html_icon.png" alt="icon">
+                    <p class="skill-icon-text">HTML</p>
+                </div>
+                <div id="java-icon" onmouseover="skillMouseOver(this)" onmouseout="skillMouseOut(this)"> 
+                    <img class="skill-icon" src="../small-icon/small_java_icon.png" alt="icon">
+                    <p class="skill-icon-text">JAVA</p>
+                </div>
+                <div id="js-icon" onmouseover="skillMouseOver(this)" onmouseout="skillMouseOut(this)">
+                    <img class="skill-icon" src="../small-icon/small_js_icon.png" alt="icon">
+                    <p class="skill-icon-text">JAVASCRIPT</p>
+                </div>
+                <div id="sql-icon" onmouseover="skillMouseOver(this)" onmouseout="skillMouseOut(this)">
+                    <img class="skill-icon" src="../small-icon/small_sql_icon.png" alt="icon">
+                    <p class="skill-icon-text">SQL</p>
+                </div>
+            </div>
+        </div>
+    
+        <div id="interest-section">
+            <h1 class="section-title-font interest-title-font">Interest</h1>
+            <ul class="interest-list-container">
+                <li class="interest-text interest-text-pos">Software Developer</li>
+                <li class="interest-text interest-text-pos">Software Engineer</li>
+                <li class="interest-text interest-text-pos">UI/UX Designer</li>
+                <li class="interest-text interest-text-pos">Database Analyst</li>
+                <li class="interest-text interest-text-pos">Graphics Designer</li>
+                <li class="interest-text interest-text-pos">Information Technology Consultant</li>
+                <li class="interest-text interest-text-pos">Event Production</li>
+                <li class="interest-text interest-text-pos">Photographer</li>
+            </ul>
+            <div>
+                <a href= "#header">
+                    <button id="scrollToTop"> &#x21e7;</button>
+                </a>  
+            </div>
+        </div>
+        
+    </body>
+
+    <footer> </footer>
+</html>
